@@ -5,17 +5,17 @@
     /** siden sidder fast husk **/
 }
 
-/*body {
-    background-color: white;
-}*/
+body {
+    background-color: whitesmoke;
+}
 
 
 /****** splash ******/
 
 #forside {
     width: 100vw;
-    height: 83.73vw;
-    background-image: url(kea_sne.jpg);
+    height: 167vw;
+    background-image: url(newyorkjump3.png);
     background-size: cover;
     margin-top: 70px;
     padding-top: 1px;
@@ -26,46 +26,66 @@
 
 @media screen and (min-width:376px) and (orientation: landscape) {
     #forside {
-        background-image: url(img/splash_PB_2/mobile_landscape.jpg);
-        height: 29.98vw;
+        background-image: url(newyorkjump2.png);
+        height: 50vw;
     }
 }
 
 @media screen and (min-width: 628px) and (orientation:portrait) {
     #forside {
-        background-image: url(img/splash_PB_2/tablet_portrait.jpg);
-        height: 66.66vw;
+        background-image: url(newyorkjump3.png);
+        height: 140vw;
     }
 }
 
 @media screen and (min-width: 769px) and (orientation: landscape) {
     #forside {
-        background-image: url(img/splash_PB_2/tablet_landscape.jpg);
-        height: 37.5vw;
+        background-image: url(newyorkjump2.png);
+        height: 50vw;
     }
 }
 
 @media screen and (min-width: 1025px) {
     #forside {
-        background-image: url(img/splash_PB_2/Desktop.jpg);
-        height: 28.13vw;
-    }
-}
-
-@media screen and (min-width: 2061px) {
-    #forside {
-        background-image: url(img/splash_PB_2/Retina.jpg);
-        height: 27.34vw;
+        background-image: url(newyorkjump2.png);
+        height: 50vw;
     }
 }
 
 
-@media screen and (max-width: 561px) {
-  .hs-responsive-embed-youtube   {
-      height: 300px;
-       width: 164px;
-    }
+
+
+
+
+
+ h1 {
+    font-size: 50px;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+     margin-top: 10px
+    /* text-align: left;*/
 }
+
+h2 {
+    font-size: 50px;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 10px
+
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+     margin-top: 10px
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    /* text-align: left;*/
+    margin-top: 10px;
+}
+
 
 /******* menu *******/
 
@@ -80,7 +100,7 @@ header {
 
 nav {
     display: block;
-    text-align: right;
+    text-align: center;
 }
 
 nav ul {
@@ -90,6 +110,7 @@ nav ul {
     width: 100%;
     height: 65px;
     background-color: #ffffff;
+
 }
 
 nav li {
@@ -99,7 +120,7 @@ nav li {
 nav li a {
     padding: 15px 25px;
     text-decoration: none;
-    text-align: right;
+    text-align: center;
     height: 35px;
 }
 
@@ -120,7 +141,7 @@ nav .current {
 
 
 #de4 {
-  /*  max-width: 1024px;*/
+   max-width: 90vw;
   /*  display: block; */
     margin: auto;
    /* background-color: white;*/
@@ -129,17 +150,31 @@ nav .current {
    /* margin-left: 50px;
     margin-right: 50px;*/
     text-align: justify;
+
 }
 
 
 #stile {
     background-color: white;
        padding: 40px;
-    border-style: solid;
-    border: 10px;
+    margin-bottom: 10px;
+
     text-align: justify;
 }
 
+.bund {
+    padding: 50px;
+   text-align:-webkit-center;
+    margin-top: 20%;
+
+}
+
+.top {
+    /*max-height: 400px;*/
+    align-items: flex-start;
+
+
+}
 
 
 
@@ -148,27 +183,53 @@ nav .current {
 #cphdox{
     background-color: white;
       padding: 40px;
+    margin-bottom: 15px;
 }
 
+#cphdox .bund {
+     padding: 50px;
+   text-align:-webkit-center;
+  margin-top: 0;
+    }
 #redesign {
      background-color: white;
        padding: 40px;
+    margin-bottom: 15px;
 }
 
 
 #eget {
      background-color: white;
        padding: 40px;
+    margin-bottom: 15px;
 }
 
+#eget .bund {
+    padding: 0px;
+   text-align:-webkit-center;
+    margin-top: 20%;
+}
 #sex {
      background-color: white;
        padding: 40px;
+    margin-bottom: 15px;
+}
+#sex .bund {
+       padding: 10px;
+   text-align:-webkit-center;
+  margin-top: 40px;
 }
 
 #kea {
      background-color: white;
        padding: 40px;
+    margin-bottom: 15px;
+}
+
+#kea .bund {
+       padding: 10px;
+   text-align:-webkit-center;
+  margin-top: 50px;
 }
 
 #republik {
@@ -176,6 +237,13 @@ nav .current {
     padding: 40px;
 
 }
+
+#republik .bund {
+       padding: 10px;
+   text-align:-webkit-center;
+  margin-top: 50px;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -230,28 +298,79 @@ nav .current {
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
 
+
 }
 
 .button1 {
     background-color: white;
-    color: black;
-    border: 2px solid #D97B61;
-   height: 10px;
+    color: #C4654F;
+   /* border: 2px solid #D97B61;*/
+   height: 40px;
 
 }
 
-.button1:hover {
-    background-color: #D97B61;
+.button1 a {
+    color: #D97B61;
+    padding: 15px;
+    display: block;
+}
+
+.button1 a:hover {
+    background-color: #C4654F;
     color: white;
 }
 
 #stile .button {
 
+}
+
+
+/*********** footer ***********/
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+    background: rgba(217, 123, 97, 0.48);
+}
+
+footer p {
+    padding-top: 30px;
+    color: #fff;
+}
+
+.footer-text {
+    display: inline-block;
+    padding: 10px 10px;
+    color: #ffffff;
+}
+
+#mig {
+    background-color: white;
+      padding: 40px;
+    margin-bottom: 15px;
+}
+
+#cv {
+    background-color: white;
+      padding: 40px;
+    margin-bottom: 15px;
+}
+
+#cv p {
+padding: 10px
+
+}
+
+#forside img {
+    width: 100vw;
+    height: 50vw;
 }
